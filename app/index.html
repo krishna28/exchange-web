@@ -81,29 +81,29 @@
 
 </div>
 
-<div class="col-md-8">
-  <div ng-if="mainVm.loading == false">
-    <h1>Base Currency = USD</h1>
-    <table class="table table-striped">
-     <thead>  
-       <tr>  
-        <th class="success">Currency Name</th>  
-        <th class="success">Code</th>
-        <th class="success">Rate</th>  
-      </tr>
-    </thead>
-    <tbody>  
-     <tr ng-repeat="e in mainVm.exchangeList">  
-      <td>{{ e.currencyName }}</td>  
-      <td>{{ e.code }}</td>
-      <td>{{ e.rate }}</td>    
-    </tr>
-  </tbody>  
-</table>
-</div>
-</div>
-</div>
-</div>
+    <div class="col-md-8">
+      <div ng-if="mainVm.loading == false">
+        <h1>Base Currency = USD</h1>
+        <table class="table table-striped">
+         <thead>  
+           <tr>  
+            <th class="success">Currency Name</th>  
+            <th class="success">Code</th>
+            <th class="success">Rate</th>  
+          </tr>
+        </thead>
+        <tbody>  
+         <tr ng-repeat="e in mainVm.exchangeList">  
+          <td>{{ e.currencyName }}</td>  
+          <td>{{ e.code }}</td>
+          <td>{{ e.rate }}</td>    
+        </tr>
+      </tbody>  
+    </table>
+    </div>
+    </div>
+    </div>
+    </div>
 
 
 
@@ -117,10 +117,10 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/services/mainService.js"></script>
-        <!-- endbuild -->
+    <!-- build:js(app) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/services/mainService.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
