@@ -2,7 +2,7 @@
   'use strict'
 
   angular.module('mainService', [])
-  .factory('MainService', function($http,config) {
+  .factory('MainService', ['$http','config', function($http,config) {
 
     var userServiceObject = {};
 
@@ -21,8 +21,8 @@
 
           return userServiceObject;
 
-        })
-  .factory('AuthInterceptor', function($q, $location, config,$window) {
+   }])
+  .factory('AuthInterceptor',['$q','$location','config','$window',function($q, $location, config,$window) {
 
     var interceptorFactory = {};
 
@@ -62,5 +62,5 @@
     }
     
     return interceptorFactory;
-  });
+  }]);
 })();

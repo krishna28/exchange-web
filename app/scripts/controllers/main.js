@@ -21,9 +21,9 @@
             "rate": exchangeRate.rates[x]
           });
         }
-        // $timeout(function() {
-        //   mainVm.exchangeList = exchangeList;
-        // }, 0);
+        $timeout(function() {
+          mainVm.exchangeList = exchangeList;
+        }, 0);
         mainVm.exchangeList = exchangeList;
         mainVm.currencies = currencies;
         mainVm.loading = false; 
